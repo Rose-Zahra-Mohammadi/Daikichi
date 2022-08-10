@@ -1,15 +1,13 @@
-package com.rosezahramohammadi.daikichi;
-
+package com.rosezahramohammadi.daikichi.controllers;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 
 @RestController
-@RequestMapping("/daikichi")
 public class DaikichiController {
 	
-	@RequestMapping("")
+	@RequestMapping("/")
 	public String daikichi() {
 		return "Welcome";
 	}
@@ -39,4 +37,5 @@ public class DaikichiController {
 	}
 	
 	}
+	
 }
